@@ -2,9 +2,9 @@ From centos
 Maintainer "Elavarasan"
 Run yum update -y
 Run yum install httpd -y
-Run  yum install epel-release yum-utils
-Run yum install php
-Run systemctl restart httpd
+Run yum install epel-release yum-utils -y
+Run yum install php -y 
+#Run systemctl start httpd
 CMD "catalina.sh" "run"
-EXPOSE 8080
+EXPOSE 80
 
